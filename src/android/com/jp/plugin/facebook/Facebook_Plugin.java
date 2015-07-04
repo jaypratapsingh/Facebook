@@ -42,17 +42,7 @@ public class Facebook_Plugin extends CordovaPlugin {
 
             this.callbackContext = callbackContext;
 
-            if(actionString.equalsIgnoreCase("messenger")) {
-
-                Intent call_class = new Intent(cordova.getActivity(),Facebook_Functions.class);
-                Bundle b = new Bundle();
-                b.putString("file_path", file_path);
-                b.putString("method", "messenger");
-                call_class.putExtras(b);
-                cordova.getActivity().startActivity(call_class);
-
-            }
-            else if(actionString.equalsIgnoreCase("share")) {
+            if(actionString.equalsIgnoreCase("share")) {
 
                 Intent call_class = new Intent(cordova.getActivity(),Facebook_Functions.class);
                 Bundle b = new Bundle();
