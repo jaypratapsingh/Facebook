@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" 
+xmlns:android="http://schemas.android.com/apk/res/android"
+    id="com.jp.plugin.facebook"
+    version="1.0.0">
+    <name>Facebook</name>
+    <description>Login, Share, with messenger with Facebook 4.0</description>
+    <license>Apache 2.0</license>
+    <keywords>facebook,Facebook 4.0, login, share, logout, checkedloggedin</keywords>
+    <repo></repo>
+    <issue></issue>
+    <js-module src="www/facebook.js" name="Facebook_Plugin">
+        <clobbers target="facebook" />
+    </js-module>
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="Facebook_Plugin" >
+                <param name="android-package" value="com.jp.plugin.facebook.Facebook_Plugin"/>
+            </feature>    
+        </config-file>
+        <source-file src="src/android/com/jp/plugin/facebook/Facebook_Plugin.java" target-dir="src/com/jp/plugin/facebook" />
+        <source-file src="src/android/com/jp/plugin/facebook/Facebook_Functions.java" target-dir="src/com/jp/plugin/facebook" />
+    </platform>
+</plugin>
