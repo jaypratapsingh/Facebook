@@ -1,7 +1,7 @@
 *************Cordova : Facebook SDK 4.0*****************
 
 
-By using this plugin you can login, logout, check loggedin user, share and also share images on messenger
+By using this plugin you can login, logout, check loggedin user, share 
 
 
 
@@ -122,28 +122,7 @@ facebook.share(
 file_path: image or video path you want to share
 message_text: String message you want to share
 
-
-------------------------------------------------------------------------------------------------
-
-
-For share images on facebook messenger:
-
-
-
-facebook.messenger(
-	function(success)
-	{
-            console.log(success);
-        }, 
-	function(error)
-	{
-            console.log(error);
-        },
-	file_path
-    );
-
-file_path: image path you want to share
-
+m
 
 
 ------------------------------------------------------------------------------------------------
