@@ -30,14 +30,6 @@ var facebook = {
 								"check_logged_in",
 								[{"file_path": "","message_text":""}]
 			        		);
-    },
-    messenger: function(successCallback, errorCallback, file_path) {
-						cordova.exec( successCallback,
-						            errorCallback,
-									"Facebook_Plugin",
-									"messenger",
-									[{"file_path": file_path,"message_text":""}]
-				        		);
     }
 }
 
