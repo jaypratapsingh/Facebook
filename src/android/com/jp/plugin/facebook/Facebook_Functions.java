@@ -77,29 +77,6 @@ public class Facebook_Functions extends Activity  {
             LoginManager.getInstance().logInWithReadPermissions(this, Arrays.asList("public_profile",
                     "email"));
         }
-        else if(method.equalsIgnoreCase("messenger")) {
-
-            try {
-                String metadata = "{ \"image\" : \"notifyanywhere\" }";
-                Uri uri = Uri.parse(path_data);
-
-                ShareToMessengerParams shareToMessengerParams =
-                        ShareToMessengerParams.newBuilder(uri, "image/*")
-                                .setMetaData(metadata)
-                                .build();
-
-                if (mPicking) {
-                    MessengerUtils.finishShareToMessenger(Facebook_Functions.this, shareToMessengerParams);
-                } else {
-                    MessengerUtils.shareToMessenger(Facebook_Functions.this, REQUEST_CODE_SHARE_TO_MESSENGER,
-                            shareToMessengerParams);
-                }
-            }
-            catch(Exception e)
-            {
-                e.printStackTrace();
-            }
-        }
         else if(method.equalsIgnoreCase("share"))
         {
             is_share = true;
