@@ -1,0 +1,19 @@
+{
+    "version": "1.0.0",
+    "name": "com.jp.plugin.facebook",
+    "cordova_name": "Facebook",
+    "description": "Login, Share, with messenger with Facebook 4.0",
+    "license": "Apache 2.0",
+    "keywords": [
+        "facebook",
+        "Facebook 4.0",
+        "login",
+        "share",
+        "logout",
+        "checkedloggedin"
+    ],
+    "platforms": [
+        "android"
+    ],
+    "engines": []
+}
